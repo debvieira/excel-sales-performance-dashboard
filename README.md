@@ -39,16 +39,6 @@ The solution was developed in Excel Online without Power Query. Therefore, dynam
 | `Analise_*` | Pivot tables and charts |
 | `Dashboard` | Final commercial dashboard |
 
-## Main calculation
-
-```excel
-=EMPILHARV(Vendas_Jan!A2:N43;Vendas_Fev!A2:N43;Vendas_Mar!A2:N43;Vendas_Abr!A2:N43)
-```
-
-This formula consolidates the four monthly sales datasets into a single dynamic array.
-
-> The Portuguese version of Excel uses `EMPILHARV`, which is equivalent to `VSTACK` in English.
-
 ## Excel Online limitations
 
 This project was developed using the free version of Excel Online, which has limitations compared to the desktop application.
@@ -76,10 +66,3 @@ With access to the desktop version of Excel, I would use Power Query to:
 - Generate a clean analytical dataset
 
 After adding a new monthly file to the folder, the entire model could be updated using **Refresh All**, eliminating most manual adjustments and reducing the risk of errors.
-
-## Project documentation
-
-Complete technical documentation containing all formulas, business rules, data validation checks, workbook structure, and monthly update instructions:
-
-- [View documentation — PDF](documentacao/Documentacao_Projeto_Vendas_Metas_Comissoes_2026.pdf)
-- [Download editable version — DOCX](documentacao/Documentacao_Projeto_Vendas_Metas_Comissoes_2026.docx)
